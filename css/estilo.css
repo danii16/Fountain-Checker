@@ -1,6 +1,7 @@
 body{
     background:url(fondo.JPEG); 
 }
+/* Elementos de cabecera */
 .cabecera{
     border-radius:5px;
     background: black;
@@ -20,24 +21,17 @@ body{
 .caja{
     display: inline-block; /* para ponerlas en la misma linea*/
     border-radius:5px;
-    background:rgb(61, 61, 61);
+    background:rgba(0, 0, 0, 0.795);
     height: 50;
     width: 50;
     margin:5px;
     transition:1s;
     
 }
-.feed{
-    background:rgba(0, 0, 0, 0.815);
-    height:500px;
-    margin:32px;
-    border-radius:5px;
-    padding:15px;
-
-}
 .cab_text{
     margin:5px;
     height:50;
+    margin-left:10px;
     margin-bottom:1px;
     display: inline-block;
 }
@@ -52,31 +46,60 @@ body{
     position:absolute;
     top:40px;
     width:50;
+    transition:1s;
   
 }
-.articulo{
+.imgCabb{
+    display:inline-block;
+    position: absolute;
+    top:40px;
+    left:112.3px;
+    width:50;
+    transition:1s;
+  
+}
+/* Elementos del feed */
+.box{
+    background:rgba(0, 0, 0, 0.815);
+    height:80%;
+    margin:32px;
+    border-radius:5px;
+    padding:15px;
+}
+.feed{
     background:rgba(58, 58, 58, 0.644);
-    height:500;
-    
-    
+    height:100%;
 }
-.post{
-    background:white;
-    height:240px;
-    width:75%;
 
+.txt{
+    padding:5px;
+    background:rgba(255, 255, 255, 0.603);
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+    width:40%;
+    position: relative;
+    left:10px;
+    top: 10px;
+    transition:1s;
+    border-radius:2px;
     
 }
-.pimg{
-    height:240px;
+.ln{
+    display:inline;
 }
+
+
 /*animaciones*/
 .caja:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+.txt:hover{
+    transform: scale(1.05);
 }
 div{
     transition:1s;
 
 }
+
 
 
